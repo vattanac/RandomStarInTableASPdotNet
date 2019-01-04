@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "CreateTable";
+}
+
+<h2>CreateTable</h2>
+
+<table border="1">
+    @foreach(var x in Model.getValue())
+    {
+        {
+            <tr>
+                <td>@x</td>
+                <td>@Model.createStar(@x)</td>
+            </tr>
+        }
+
+    }
+</table>
+<a href="Index">back</a>
